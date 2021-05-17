@@ -63,7 +63,7 @@ router.put('/:id', withAuth, (req, res) => {
 
 // destroy request to remove comment by id
 
-router.delete('/:id', withAuth, (req, req) => {
+router.delete('/:id', withAuth, (req, res) => {
     Comment.destroy({
         where: {
             id: req.params.id
